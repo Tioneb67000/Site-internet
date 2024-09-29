@@ -1,0 +1,83 @@
+/*Reset CSS*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+}
+
+h1 {
+    margin: 10;
+    font-size: 7vh;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.liens ol {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.lien {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.lien a::after {
+    display: inline-block;
+    color: black;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+h3 {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 400;
+    margin-right: 400;
+    margin-bottom: 10;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    transition: background .2s ease-in-out;
+}
+
+button:hover {
+    background: rgb(255, 255, 255, 0.4);
+}
+
+img {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    margin-top: 15;
+    margin-left: 18%;
+    margin-right: 18%;
+}

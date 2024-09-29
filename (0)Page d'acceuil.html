@@ -1,0 +1,58 @@
+<!DOCTYPE hmlt>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="CSS/CSS page d'acceuil.css" rel="stylesheet">
+    <title>Page d'acceuil</title>
+    <link rel="website icon" type="png" href="CSS/Images/Site_logo.png">
+</head>
+
+<body>
+
+    <script>
+        var heureActuelle = new Date().getHours();
+        var salutationElement = document.body
+        var salutation;
+        if (heureActuelle >= 5 && heureActuelle < 18) {
+            salutation = "Bonjour Benoît, que voulez-vous faire ?";
+        } else {
+            salutation = "Bonsoir Benoît, que voulez-vous faire ?";
+        }
+        salutationElement.innerHTML = '<h1>' + salutation + '</h1>';
+    </script>
+
+    <div class="hautDIV"></div>
+    <nav class="acceuil">
+        <p class="sous"><a href="(1)Cours par matière.html" style="color:black">Cours par matière</a></p>
+        <p class="sous"><a href="(2)Emploi du temps.html" style="color:black">Emploi du temps</a></p>
+        <p class="sous"><a href="(3)Autre.html" style="color:black">Autre</a></p>
+        <p class="sous"><a href="(4)Pense-bête CODE.html" style="color:black">Pense-bête CODE</a></p>
+    </nav>
+
+    <div class="lien_vers_internet">
+        <div class="lien_1">
+            <a href="https://youtube.com" target="_blank">
+                <button>Youtube<img src="CSS/Images/Youtube_logo.png"></button>
+            </a>
+        </div>
+        <div class="lien_2">
+            <a href="https://mon.lyceeconnecte.fr/timeline/timeline" target="_blank">
+                <button>Lycée connecté<img src="CSS/Images/ENT_logo.png" class="lycée"></button>
+            </a>
+        </div>
+        <div class="lien_3">
+            <a href="https://franime.fr" target="_blank">
+                <button>FR Anime<img src="CSS/Images/FRanime_logo.png"></button>
+            </a>
+        </div>
+        <dic class="lien_4">
+            <a href="https://google.com" target="_blank">
+                <button>Google<img src="CSS/Images/Google_logo.png" class="google"></button>
+            </a>
+        </dic>
+        
+    </div>
+</body>
+
+</html>

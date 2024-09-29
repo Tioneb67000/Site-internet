@@ -1,0 +1,173 @@
+/*Reset CSS*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:url("cat.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed,scroll;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-size:cover;
+        background-position: center;
+    }
+
+    h1 {
+        margin: 10;
+        margin-right: 0;
+        font-size: 5vh;
+        color: black;
+        background-color: rgb(255, 255, 255, 0.2);
+        text-align: center;
+    
+    }
+    
+    .hautDIV {
+        border-bottom: 2px solid black;
+    }
+    
+    nav {
+        border-bottom: 2px solid black;
+        margin-bottom: 15px;
+    }
+    
+    .acceuil {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .acceuil .sous {
+        font-weight: 900;
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        padding: 4px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+
+    }
+    
+    button {
+        margin-bottom: 20px;
+        font-size: 3vh;
+        height: 200px;
+        width: 200px;
+        border: none;
+        background: rgb(255, 255, 255, 0.3);
+        color: white;
+        cursor: pointer;
+        border-radius: 10px 10px 10px 10px;
+        transition: background .2s ease-in-out;
+    }
+    
+    button:hover {
+        background: rgb(255, 255, 255, 0.5);
+        color:black;
+    }
+    
+    img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+        width: 7vh;
+        height: 5vh;
+    }
+    
+    .lien_vers_internet {
+        display: grid;
+        justify-content: center;
+        justify-content:space-evenly;
+    }
+    
+    .lycée {
+        height: 7vh;
+    }
+    
+    .google {
+        width: 5vh;
+        height: 5vh;
+        background: rgb(255, 255, 255, 0.5);
+        color:black;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    h1 {
+        margin: 10;
+        font-size: 7vh;
+        color: black;
+        background-color: rgb(255, 255, 255, 0.2);
+        text-align: center;
+    
+    }
+    
+    .hautDIV {
+        border-bottom: 2px solid black;
+    }
+    
+    nav {
+        border-bottom: 2px solid black;
+        margin-bottom: 15px;
+    }
+    
+    .acceuil {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .acceuil .sous {
+        margin: 0 1rem;
+        font-weight: 900;
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    button {
+        font-size: 3vh;
+        height: 200px;
+        width: 200px;
+        border: none;
+        background: rgb(255, 255, 255, 0.3);
+        color: white;
+        cursor: pointer;
+        border-radius: 10px 10px 10px 10px;
+        transition: background .2s ease-in-out;
+    }
+    
+    button:hover {
+        background: rgb(255, 255, 255, 0.5);
+        color:black;
+    }
+    
+    img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+        width: 7vh;
+        height: 5vh;
+    }
+    
+    .lien_vers_internet {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .lycée {
+        height: 7vh;
+    }
+    
+    .google {
+        width: 5vh;
+        height: 5vh;
+    }
+}

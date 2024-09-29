@@ -1,0 +1,97 @@
+/* Reset CSS*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+}
+
+.crochet {color: rgb(255,255,255,0.5);}
+.texteBleu {color:rgb(86,156,214);}
+.texteCyan {color: rgb(156,220,254);}
+.texteOrange {color:rgb(206,145,120);}
+.ensemble{color: rgb(222,201,14);}
+.variable{color: rgb(198,182,94);}
+.reset{color: rgb(101,151,85);}
+.url{color: rgb(204,109,212);}
+
+nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 20;
+}
+
+.liens ol {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.lien {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.lien a::after {
+    display: inline-block;
+    color: black;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+h1 {
+    margin: 10;
+    font-size: 7vh;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+button {
+    height: 20px;
+    width: 60px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    transition: background .2s ease-in-out
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.exemple {
+    background-color: rgb(45,45,45);
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.exemple_haut {
+    background-color: rgb(40,40,40);
+    align-items: baseline;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .1rem 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.exemple_bas {
+    margin-top: 10;
+    padding-left: 10;
+    padding-right: 10;
+    font-size: 2vh;
+}
